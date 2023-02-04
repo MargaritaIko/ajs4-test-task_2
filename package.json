@@ -1,0 +1,33 @@
+{
+  "name": "ajs4-test-task1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargaritaIko/ajs4-test-task1.git"
+  },
+  "author": "MargaritaIko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MargaritaIko/ajs4-test-task1/issues"
+  },
+  "homepage": "https://github.com/MargaritaIko/ajs4-test-task1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.4.1",
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "jest": "^29.4.1"
+  },
+  "dependencies": {
+    "core-js": "^3.27.2"
+  }
+}
