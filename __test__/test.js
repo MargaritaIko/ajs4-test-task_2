@@ -1,6 +1,5 @@
 import getHealthStatus from '../index';
 
-
 test.each([
   [{ name: 'Маг', health: 90 }, 'healthy'],
   [{ name: 'Маг', health: 45 }, 'wounded'],
