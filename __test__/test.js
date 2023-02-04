@@ -1,11 +1,17 @@
-import getHealthStatus from '../index';
+import sortHealthCharacters from '../index';
 
-test.each([
-  [{ name: 'Маг', health: 90 }, 'healthy'],
-  [{ name: 'Маг', health: 45 }, 'wounded'],
-  [{ name: 'Маг', health: 10 }, 'critical'],
-])('Состояние персонажа', (input, expected) => {
-  const received = getHealthStatus(input);
+test('Сортировка персонажей по состоянию', () => {
+  const input = [
+    { name: 'мечник', health: 10 },
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+  ];
+  const expected = [
+    { name: 'маг', health: 100 },
+    { name: 'лучник', health: 80 },
+    { name: 'мечник', health: 10 },
+  ];
+  const received = sortHealthCharacters(input);
 
-  expect(received).toBe(expected);
+  expect(received).toEqual(expected);
 });
